@@ -26,16 +26,12 @@
 
         <pod name="TwilioVideo" version="1.0.0-beta10" />
 
-        <preference name="CAMERA_USAGE_DESCRIPTION"/>
-        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-            <string>$CAMERA_USAGE_DESCRIPTION</string>
+		<config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+            <string>We require your camera to make video calls.</string>
         </config-file>
-
-        <preference name="MICROPHONE_USAGE_DESCRIPTION"/>
-        <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
-            <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+        <config-file parent="NSMicrophoneUsageDescription" target="*-Info.plist">
+            <string>We require your microphone to make calls.</string>
         </config-file>
-
 	</platform>
 
 </plugin>
